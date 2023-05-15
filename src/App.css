@@ -1,0 +1,277 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+
+html{
+  font-size: 62.6%;
+}
+
+.container{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header{
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
+  color: #e45d10;
+  position: relative;
+}
+
+.heading{
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.inputbox{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.inputbox input{
+  width: 40%;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 2rem;
+  outline: none;
+}
+
+.search{
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 2rem;
+  background: #e45d10; ;
+  color: white;
+}
+
+.recipy_divs{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+  
+}
+
+.card{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.cardhead{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 15px 15px 0 0 ;
+}
+
+.cardhead img{
+  width:100% ;
+  height: 210px;
+  border-radius: 15px;
+}
+
+.card_body{
+  width: 100%;
+  padding: 8px;
+  position: relative;
+}
+
+.card_body h1{
+  font-size: 3rem;
+  margin: 5px 0;
+}
+.card_body p{
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-align: justify;
+  font-weight: 600;
+}
+
+.btn{
+  width: 100%;
+  margin: 5px 0;
+}
+
+.get_recipy{
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #e45d10; ;
+  color: white;
+  font-size: 1.8rem;
+}
+
+@media (max-width:800px){
+  .card{
+      flex: 0 0 300px;
+  }
+
+  .inputbox input{
+    width: 60%;
+  }
+
+  .head{
+    
+  }
+
+
+ 
+}
+@media (max-width:400px){
+  .card{
+      flex: 1 1 200px;
+      margin: 0 10px;
+  }
+
+  
+}
+
+.recepyshow{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  background-color: #e45d0e;
+}
+
+.show{
+  display: block;
+}
+
+
+.icon{
+  width: 100%;
+  position: relative;
+  margin: 10px;
+}
+
+.icon .iconClose{
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 94%;
+  cursor: pointer;
+  color: white;
+}
+
+.head{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.head h1{
+  font-size: 3rem;
+  color: white;
+  margin: 15px 0;
+}
+
+.image{
+  width: 100%;
+ 
+}
+
+.image img{
+  width: 15%;
+  height: 15vh;
+  border-radius: 50px;
+  display: block;
+  margin: 5px auto;
+}
+
+.bodycontent{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.bodycontent h1{
+  font-size: 3rem;
+  color: white;
+}
+
+.instruc{
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+ 
+
+}
+.instruc p{
+  font-size: 1.8rem;
+  text-align: justify;
+  color: white;
+  margin-top: 10px;
+  overflow-y: scroll;
+  height: 25vh;
+  padding: 0 10px;
+}
+
+
+
+.watch{
+  width: 100%;
+}
+
+.watchvid{
+  padding: 10px;
+  display: block;
+  margin: 15px auto;
+  cursor: pointer;
+  color: #e45d10; ;
+  background: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+.watchvid a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
